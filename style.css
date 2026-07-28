@@ -423,7 +423,7 @@ transition: .3s;
 }
 .team-card{
 height:240px;
-shadow-box:var(--shadow);
+box-shadow: var(--shadow);
 border: var(--border);
 align-items: center;
 text-align: center;
@@ -441,10 +441,6 @@ color:var(--text)
 .team-card span{
     color: var(--gray);
 }
-```css
-/* ========================= */
-/* TESTIMONIALS              */
-/* ========================= */
 
 .testimonials{
 
@@ -876,41 +872,70 @@ footer{
 
 
 
-@media (max-width:576px){
+@media (max-width:768px){
 
-    section{
+    /* ---------- Navbar ---------- */
 
-        padding:70px 5%;
+    .navbar{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:18px;
+        padding:20px 0;
+    }
 
+    .navbar ul{
+        display:flex;
+        flex-direction:row;   /* مهم */
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:24px;
+    }
+
+    .logo{
+        font-size:32px;
+        text-align:center;
+        line-height:1.2;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+        display:flex;
+        flex-direction:row;   /* کنار هم بمونه */
+        align-items:center;
+        gap:24px;
+    }
+
+    .hero-content{
+        flex:1;
+    }
+
+    .hero-image{
+        flex:1;
     }
 
     .hero-content h1{
+        font-size:34px;
+        line-height:1.35;
+    }
 
-        font-size:36px;
-
+    .hero-content p{
+        font-size:16px;
     }
 
     .hero-buttons{
-
-        flex-direction:column;
-
+        display:flex;
+        flex-direction:row;   /* دکمه‌ها کنار هم */
+        justify-content:center;
+        gap:12px;
+        flex-wrap:wrap;
     }
 
-    .btn,
-
-    .btn-outline{
-
-        width:100%;
-
+    .hero-buttons .btn,
+    .hero-buttons .btn-outline{
+        width:auto;
+        min-width:140px;
         text-align:center;
-
     }
-
-    .contact-content{
-
-        padding:30px 20px;
-
-    }
-
 }
-```
