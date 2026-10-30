@@ -243,17 +243,17 @@
 <section class="team">
     <div class="team-card">
         <img src="team1.jpg" alt="نام متخصص">
-        <h3>نام متخصص</h3>
+        <h3>شیدا حسن زاده</h3>
         <span>متخصص ناخن</span>
     </div>
     <div class="team-card">
         <img src="team2.jpg" alt="نام متخصص">
-        <h3>نام متخصص</h3>
+        <h3>سارا بیات</h3>
         <span>متخصص پوست</span>
     </div>
     <div class="team-card">
         <img src="team3.jpg" alt="نام متخصص">
-        <h3>نام متخصص</h3>
+        <h3>نارین محمدی</h3>
         <span>متخصص مو</span>
     </div>
 </section>
@@ -273,13 +273,46 @@
         <h2>رزرو نوبت</h2>
     </div>
     <div class="contact-content">
-        <a href="#" class="btn" >ثبت نوبت</a>
-        <form><input type="date">
-         <input type="text">
-         <input type="tel">
-        <input type="text"></form>
-    </div>
+        <form class="contact-content" id="consultationForm" novalidate>
+            <div class="form-group">
+              <label for="name"> نام و نام خانوادگی </label>
 
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="مثلا نیکا محمدی"
+                autocomplete="name"
+                required
+              />
+
+              <small class="form-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="phone"> شماره تماس </label>
+
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputmode="tel"
+                placeholder="مثلاً 09121234567"
+                autocomplete="tel"
+                required
+              />
+
+              <small class="form-error"></small>
+            </div>
+            <button type="submit" class="btn consultation-submit">
+              دریافت مشاوره
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="status">
+            درخواست شما با موفقیت ثبت شد. کارشناسان ما به‌زودی با شما تماس
+            می‌گیرند.
+          </div>
 </section>
 <section class="instagram">
 
